@@ -1,8 +1,11 @@
-# 산술 연산자 풀이
-a = int(input())
-b = int(input())
+A = int(input())
+B = int(input())
 
-print(a * (b % 10))    # 백의 자리 수 b를 10으로 나눈 나머지
-print(a * (b % 100 // 10))    # 백의 자리 수 b를 100으로 나눈 나머지에 10으로 나눈 몫
-print(a * (b // 100))    # 백의 자리 수 b를 100로 나눈 몫
-print(a * b)
+B1 = B % 10
+B2 = (B // 10) % 10
+B3 = B // 100
+
+print(A * B1)
+print(A * B2)
+print(A * B3)
+print(A * B)
