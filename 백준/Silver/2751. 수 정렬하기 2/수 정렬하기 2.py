@@ -1,12 +1,12 @@
 import sys
 
 n = int(sys.stdin.readline())
-nums = []
 
+nums = set()
 for _ in range(n):
-    nums.append(int(sys.stdin.readline()))
+    nums.add(int(sys.stdin.readline()))
     
-nums.sort()
+nums = sorted(nums)
 
 for num in nums:
     print(num)
