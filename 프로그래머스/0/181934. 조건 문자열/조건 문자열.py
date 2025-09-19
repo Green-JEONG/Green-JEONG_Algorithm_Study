@@ -1,9 +1,9 @@
 def solution(ineq, eq, n, m):
-    if ineq == '>' and eq == '=':
-        return 1 if n >= m else 0
-    elif ineq == '<' and eq == '=':
-        return 1 if n <= m else 0
-    elif ineq == '>' and eq == '!':
-        return 1 if n > m else 0
-    elif ineq == '<' and eq == '!':
-        return 1 if n < m else 0
+    cond = {
+        '>=': n >= m,
+        '<=': n <= m,
+        '>!': n > m,
+        '<!': n < m,
+    }
+    
+    return 1 if cond[ineq + eq] else 0
