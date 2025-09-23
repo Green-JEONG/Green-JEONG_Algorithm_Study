@@ -4,4 +4,6 @@ def solution(n):
     #     total += i
     # return total
 
-    return sum(i for i in range(2, n+1, 2))
+    # return sum(i for i in range(2, n+1, 2))
+    
+    return sum(range(2, n+1, 2))
