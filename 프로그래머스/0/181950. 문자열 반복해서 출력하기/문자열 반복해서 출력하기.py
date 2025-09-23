@@ -1,3 +1,2 @@
-str_, n = input().split()
-
-print(str_ * int(n))
+s, n = input().strip().split(' ')
+print(s*int(n))
