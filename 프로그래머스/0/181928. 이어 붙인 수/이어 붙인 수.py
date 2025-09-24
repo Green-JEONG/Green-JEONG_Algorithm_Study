@@ -1,11 +1,9 @@
 def solution(num_list):
-    odd_str = ""
-    even_str = ""
-    
+    total_odd = ''
+    total_even = ''
     for n in num_list:
         if n % 2:
-            odd_str += str(n)
+            total_odd += str(n)
         else:
-            even_str += str(n)
-    
-    return int(odd_str) + int(even_str)
+            total_even += str(n)
+    return int(total_odd)+int(total_even)
