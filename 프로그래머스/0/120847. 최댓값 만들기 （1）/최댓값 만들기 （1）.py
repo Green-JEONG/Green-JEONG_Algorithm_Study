@@ -1,3 +1,3 @@
 def solution(numbers):
-    result = sorted(numbers)[-1] * sorted(numbers)[-2]
-    return result
+    asc_numbers = sorted(numbers)
+    return asc_numbers[-1] * asc_numbers[-2]
