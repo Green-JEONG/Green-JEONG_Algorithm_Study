@@ -1,4 +1,4 @@
 def solution(a, b):
-    str1 = str(a) + str(b)
-    str2 = str(b) + str(a)
-    return max(int(str1), int(str2))
+    asc_s = int(str(a) + str(b))
+    desc_s = int(str(b) + str(a))
+    return desc_s if asc_s < desc_s else asc_s
