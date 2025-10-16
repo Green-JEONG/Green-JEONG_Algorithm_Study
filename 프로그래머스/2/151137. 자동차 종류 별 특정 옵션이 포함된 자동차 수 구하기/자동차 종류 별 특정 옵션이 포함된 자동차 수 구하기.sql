@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+SELECT CAR_TYPE, COUNT(*) AS CARS
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE OPTIONS LIKE '%통풍시트%' -- 'IN' 은 컬럼이 정확히 그 값들 중 하나일 때 해당
+    OR OPTIONS LIKE '%열선시트%'
+    OR OPTIONS LIKE '%가죽시트%'
+GROUP BY CAR_TYPE
+ORDER BY CAR_TYPE;
