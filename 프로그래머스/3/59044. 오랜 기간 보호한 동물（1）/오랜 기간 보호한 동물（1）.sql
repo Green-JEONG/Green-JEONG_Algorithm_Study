@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+SELECT I.NAME, I.DATETIME
+FROM ANIMAL_INS AS I
+LEFT JOIN ANIMAL_OUTS AS O
+    ON I.ANIMAL_ID = O.ANIMAL_ID
+WHERE O.ANIMAL_ID IS NULL -- 입소는 되었는데 입양이 안된 경우 (공통 분모 찾아 비교)
+ORDER BY I.DATETIME
+LIMIT 3; -- 상위 3개만 출력
