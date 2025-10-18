@@ -1,0 +1,10 @@
+-- 코드를 입력하세요
+SELECT ID, NAME, HOST_ID
+FROM PLACES
+WHERE HOST_ID IN ( -- 헤비유저가 등록한 모든 공간만 필터링
+    SELECT HOST_ID
+    FROM PLACES
+    GROUP BY HOST_ID
+    HAVING COUNT(*) >= 2
+)
+ORDER BY ID;
