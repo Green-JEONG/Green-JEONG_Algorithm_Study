@@ -1,10 +1,10 @@
 def solution(myString):
-    alph = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]
-    newString = []
-    for i in myString:
-        if i in alph:
-            newString.append("l")
+    answer = ""
+    
+    for ch in myString:
+        if ch < 'l':
+            answer += 'l'
         else:
-            newString.append(i)
+            answer += ch
             
-    return ''.join(newString)
+    return answer
