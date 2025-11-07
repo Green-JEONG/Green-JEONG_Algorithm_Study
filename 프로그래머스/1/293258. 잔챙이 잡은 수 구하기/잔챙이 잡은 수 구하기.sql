@@ -1,0 +1,4 @@
+-- 코드를 작성해주세요
+SELECT COUNT(*) AS FISH_COUNT -- COUNT(ISNULL(LENGTH)는 1 또는 0 결과값을 세므로 6이 되어 올바르지 X)
+FROM FISH_INFO
+WHERE ISNULL(LENGTH);
